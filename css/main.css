@@ -1094,7 +1094,7 @@ button {
 }
 .intro {
   position: relative;
-  height: 562px;
+  height: 561px;
   overflow: hidden
 }
 @media (max-width:991px) {
@@ -1109,15 +1109,23 @@ button {
 }
 .intro__title {
   position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
+  left: 30px;
+  top: 82px;
+  z-index: 10;
   display: block;
-  width: 1px;
-  height: 1px;
-  font-size: 1px;
-  opacity: 0;
-  overflow: hidden
+  font-weight: 100;
+  font-size: 12px;
+}
+@media (max-width:991px) {
+  .intro__title {
+    top: 69px;
+  }
+}
+@media (max-width:575px) {
+  .intro__title {
+    top: 46px;
+    left: 10px;
+  }
 }
 .intro__slider {
   height: 100%;
@@ -3735,7 +3743,6 @@ button {
   margin-bottom: 20px;
   font-size: 12px;
   font-weight: 400;
-  opacity: .7
 }
 .footer__info span {
   display: block;
@@ -3784,6 +3791,9 @@ button {
 .footer__site {
   color: #575757
 }
+.footer__site:hover {
+  color:#f27e00;
+}
 @media (max-width:991px) {
   .footer__first {
     margin-bottom: 30px
@@ -3808,7 +3818,12 @@ button {
   width: max-content;
   margin-bottom: 10px;
   font-size: 14px;
-  text-decoration: underline
+  text-decoration: underline;
+  color: #575757;
+}
+.footer__personality:hover,
+.footer__policy:hover {
+  color:#f27e00;
 }
 .footer__social {
   display: -webkit-flex;
